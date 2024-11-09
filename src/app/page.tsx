@@ -18,9 +18,9 @@ export default function Home() {
           <Image src={profilephoto} alt="Profile Photo" width={150} height={150} className="profile-pic"/>
           </div>
           </div>
-          <h1>Hi&comma; It&apos;s <span>Muhammad Usman Khan</span></h1>
+          <h1>Hi, It&apos;s <span>Muhammad Usman Khan</span></h1>
           <p className='Go'>I&apos;m a Full Stack Developer</p>
-          <p className="description"> I am a web developer focused on crafting pixel-perfect&comma; responsive designs that are both visually captivating and user-friendly. Continuously learning to stay updated with technology&comma; I aim to deliver solutions that truly make a difference.
+          <p className="description"> I am a web developer focused on crafting pixel-perfect, responsive designs that are both visually captivating and user-friendly. Continuously learning to stay updated with technology, I aim to deliver solutions that truly make a difference.
             </p>
           <div className="social-icons">
           <footer className="footer-container">

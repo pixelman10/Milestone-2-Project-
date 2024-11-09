@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* General Styles */
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +21,7 @@ body {
   padding: 2em;
 }
 
-/* Header Navigation */
+
 header nav {
   display: flex;
   justify-content: center;
@@ -78,11 +77,11 @@ header nav a:hover::before {
   margin-bottom: 2em;
   transition: transform 0.5s ease;
   background: url('../../public/Image/WhatsApp\ Image\ 2024-11-01\ at\ 14.44.41_b91fd056.jpg') center/cover;
-  border: 5px solid #121212; /* Slightly thicker border */
+  border: 5px solid #121212; 
 }
 
 .profile-pic:hover {
-  transform: scale(1.1); /* Slightly larger scale on hover */
+  transform: scale(1.1); 
 }
 
 
@@ -102,8 +101,14 @@ h1 span {
   color: #aaa;
   margin: 1em 0;
   max-width: 600px;
-  font-size: 1.1em;
+  
+
+  font-size: 21px;
+  margin-right: 0.55rem;
+  font-weight: bold;
+
 }
+
 
 .social-icons {
   display: flex;
@@ -124,7 +129,7 @@ h1 span {
 
 
 
-/* Floating Background Animation */
+
 body::before {
   content: "";
   position: fixed;
@@ -146,7 +151,6 @@ body::before {
   }
 }
 
-/* Animation for Fade In */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -163,7 +167,7 @@ body::before {
 
 .about-container {
   min-height: 100vh;
-  background: #121212; /* Match with body background */
+  background: #121212; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -171,8 +175,8 @@ body::before {
 }
 
 .about-box {
-  background-color: #1a1a1a; /* Darker shade for contrast */
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5); /* Slightly darker shadow */
+  background-color: #1a1a1a;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5); 
   border-radius: 0.5rem;
   padding: 2rem;
   max-width: 60rem;
@@ -180,7 +184,7 @@ body::before {
 }
 
 .about-text, .about-heading, .about-label, .about-detail {
-  color: #ffffff; /* Maintain text color for readability */
+  color: #ffffff; 
 }
 
 
@@ -217,7 +221,7 @@ body::before {
 
 .skills-container {
   min-height: 100vh;
-  background: #121212; /* Match with body background */
+  background: #121212; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -225,8 +229,8 @@ body::before {
 }
 
 .skills-box {
-  background-color: #1a1a1a; /* Slightly lighter dark for contrast */
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5); /* Darker shadow for a subtle effect */
+  background-color: #1a1a1a; 
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
   border-radius: 0.5rem;
   padding: 2rem;
   max-width: 60rem;
@@ -234,7 +238,7 @@ body::before {
 }
 
 .skills-text, .skills-heading, .skill-item {
-  color: #ffffff; /* Keep text white for readability */
+  color: #ffffff; 
 }
 
 .skills-heading {
@@ -304,26 +308,43 @@ body::before {
 
 
 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #121212; 
+  color: #fff;
+  overflow-x: hidden;
+}
+
+
 .card {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1.5rem;
   min-height: 100vh;
-  background-color: #121212; /* Match body background color */
+  background-color: #121212;
 }
 
+/* Card box */
 .card1 {
-  background-color: #1a1a1a; /* Slightly lighter dark for subtle contrast */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Darker shadow for a more subtle effect */
+  background-color: #1a1a1a; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); 
   border-radius: 0.5rem;
   padding: 2rem;
   max-width: 800px;
   width: 100%;
 }
 
+
 .card-content h1, .education-title {
-  color: #ffffff; /* Ensure text is clearly visible */
+  color: #ffffff; 
 }
 
 .card-content h1 {
@@ -333,26 +354,15 @@ body::before {
   margin-bottom: 1.5rem;
 }
 
-
-.card-content li {
-  color: #d1d5db; /* Keep contrast for readability */
-}
-
-
-.card-content ul {
-  list-style-type: none;
-  padding: 0;
-}
-
 .card-content li {
   font-size: 1rem;
-  color: #d1d5db;
+  color: #d1d5db; 
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
 }
 
-/* Custom Title Styling */
+
 .education-title {
   font-size: 45px;
   margin-right: 0.95rem;
@@ -366,6 +376,56 @@ body::before {
   font-weight: bold;
   color: whitesmoke;
 }
+
+
+
+
+@media (max-width: 768px) {
+  .card-content h1 {
+    font-size: 2.5rem; 
+  }
+
+  .education-title {
+    font-size: 35px; 
+  }
+
+  .card1 {
+    padding: 1.5rem; 
+    max-width: 100%; 
+  }
+
+  .card-content ul {
+    padding: 0 1rem; 
+  }
+
+  .card-content li {
+    font-size: 0.875rem; 
+  }
+}
+
+
+@media (max-width: 480px) {
+  .card-content h1 {
+    font-size: 2rem;
+  }
+
+  .education-title {
+    font-size: 30px; 
+  }
+
+  .card1 {
+    padding: 1rem; 
+  }
+
+  .card-content li {
+    font-size: 0.875rem; 
+  }
+
+  .just-show {
+    font-size: 22px; 
+  }
+}
+
 
 
 .Go{
@@ -488,4 +548,9 @@ body::before {
 }
 
 
-
+.description{
+  font-size: 25px;
+  margin-right: 0.55rem;
+  font-weight: bold;
+  color: gray;
+}
